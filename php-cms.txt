@@ -1,0 +1,25 @@
+FrontEnd Displays:
+- Pages
+- News
+- Archives
+
+
+BackEnd:
+- Contents Manager
+	Add, Edit, Delete, SEO MetaBox
+- Categories Manager
+	Add, Edit, Delete
+- Media Manager
+	Add, Edit, Delete
+- Users Manager
+	Add, Edit, Delete, User Profile
+- Menus Manager
+	Add, Edit, Delete
+- Themes Manager
+	Add, Edit, Delete
+- Moduls Manager
+	Add, Activation, Delete
+- Settings Page
+	Web Info, Date Settings (ID/EN), Generic SEO (Title, Description, Keywords), Social Media/Contact,
+	Web Layouts (Just like WP Settings + Theme Options)
+- Dasboard Welcome Page (user notification, update notification, web stats, content info, user info)

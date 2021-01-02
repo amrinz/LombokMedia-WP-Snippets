@@ -1,0 +1,43 @@
+<?php
+
+// Modify Admin Column: Add, Move/Ordering
+add_filter( 'manage_post_posts_columns', 'set_custom_edit_mycpt_columns' );
+
+function set_custom_edit_mycpt_columns( $columns ) {
+	$columns['location'] = __( 'Location', 'lombokmedia' );
+	return $columns;
+}
+
+add_action( 'manage_post_posts_custom_column' , 'custom_mycpt_column', 10, 2 );
+
+function custom_mycpt_column( $column, $post_id ) {
+  switch ( $column ) {
+
+    // display a list of the custom taxonomy terms assigned to the post 
+    case 'location' :
+      $terms = get_the_term_list( $post_id , 'location' , '' , ', ' , '' );
+      echo is_string( $terms ) ? $terms : '—';
+      break;
+  }
+}
+
+add_filter( 'manage_edit-post_sortable_columns', 'set_custom_mycpt_sortable_columns' );
+
+function set_custom_mycpt_sortable_columns( $columns ) {
+  $columns['location'] = 'location';
+  return $columns;
+}
+
+add_filter('manage_posts_columns', 'column_order');
+function column_order($columns) {
+  $n_columns = array();
+  $move = 'location'; // what to move
+  $before = 'categories'; // move before this
+  foreach($columns as $key => $value) {
+    if ($key==$before){
+      $n_columns[$move] = $move;
+    }
+      $n_columns[$key] = $value;
+  }
+  return $n_columns;
+}

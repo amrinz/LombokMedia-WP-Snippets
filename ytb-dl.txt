@@ -1,0 +1,5 @@
+../ydl https://www.viki.com/tv/35524c-men-with-swords-season-1?locale=en -f m3u8-http-640 
+
+--write-sub --sub-lang en --sub-format srt
+
+https://www.youtube.com/playlist?list=PLMf7VY8La5RGGFEmmcjKzJ4BCFdBuo4o8 --playlist-start 43 (immortal song 2)

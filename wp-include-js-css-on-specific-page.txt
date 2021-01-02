@@ -1,0 +1,7 @@
+function conditionally_load_plugin_js_css() {
+	if(!is_page(array(40,534)) ) { # Only load CSS and JS on needed Pages	
+		wp_dequeue_script('contact-form-7');
+		wp_dequeue_script('google-recaptcha');
+		wp_dequeue_style('contact-form-7');
+	}
+add_action( 'wp_enqueue_scripts', 'conditionally_load_plugin_js_css' ); 

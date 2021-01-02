@@ -1,0 +1,6 @@
+//Add custom post to recent posts widget
+add_filter('widget_posts_args', 'widget_posts_args_add_custom_type'); 
+function widget_posts_args_add_custom_type($params) {
+   $params['post_type'] = array('post','news', 'package');
+   return $params;
+}

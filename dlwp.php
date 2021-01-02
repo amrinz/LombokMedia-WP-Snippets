@@ -1,0 +1,1 @@
+<?php file_put_contents("wp.zip", file_get_contents("http://wordpress.org/latest.zip")); ?>

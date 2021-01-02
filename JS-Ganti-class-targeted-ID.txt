@@ -1,0 +1,12 @@
+Skrip Mengganti class target #get-quote
+trigger, tombol .navbar-toggler
+----------------------------------------
+
+<!--<script>
+	//toggle Get Quote Text
+	$(document).ready(function(){
+	$(".navbar-toggler").click(function(){
+	  $("#get-quote").toggleClass("d-md-none d-none");
+	});
+ });
+</script>-->

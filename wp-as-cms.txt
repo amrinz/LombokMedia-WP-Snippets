@@ -1,0 +1,32 @@
+LombokMedia Theme
+=================
+- LombokMedia Standard
+  Multipurpose WordPress (tpl-home.php, tpl-onepage.php, tpl-onecolumn.php, tpl-right-sidebar.php, tpl-left-sidebar.php, tpl-threecolumns.php)
+- LombokMedia Bisnis
+  E-Commerce oriented WordPress (Pages, Products, News)
+
+WordPress as CMS
+================
+
+- Pages
+
+- Rewrite Posts Label as new Content Type, ex: Products
+  add new metabox (vertical tabbed metabox group) for Product properties
+  - Variation (color, size)
+  - Weight
+  - SKU
+  - Price (Normal Price, OnSale Price, Limited time Price)
+  - Product Gallery
+  - Categories, Tags, brand
+  - Shipping options
+
+- Shopping Cart System?
+- Payment System?
+- filtering system by brand, price
+- Search product with filter: price range, brand, in category/tags
+
+- News CPT with news slug (to replace Posts)
+
+- Homepage display Products as Grids Products Catalogue (Thumbnail and Price) With Flipped Information (Excerpt, Variation, Price)
+
+- Archives, Search as Grid Products Catalogue
